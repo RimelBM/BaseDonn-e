@@ -1,0 +1,120 @@
+ 
+MySQL  VS  PostgreSQL  VS  SQL SERVER 
+
+1. MySQL 
+MySQL est un système de gestion de base de données relationnelle (SGBDR) développé par Oracle et basé sur un langage de requête structuré (SQL).
+ MySQL fait partie intégrante des piles de logiciels les plus populaires pour la création et la maintenance de tout, des applications Web destinées aux clients aux puissants services B2B basés sur les données. Sa nature open source, sa stabilité et son riche ensemble de fonctionnalités, associés au développement et au support continus d'Oracle. Les organisations critiques pour Internet telles que Facebook, Flickr, Twitter, Wikipedia et YouTube utilisent toutes des backends MySQL.
+
+Avantages de MySQL :
+⦁	Sécurité des données;
+⦁	Évolutivité à la demande;
+⦁	Haute performance;
+⦁	Disponibilité 24 heures sur 24;
+⦁	Support transactionnel complet;
+⦁	Contrôle complet du flux de travail;
+⦁	Le coût total de possession réduit;
+⦁	La flexibilité de l'open source.
+
+2. PostgreSQL 
+PostgreSQL est un puissant système de base de données relationnelle objet et open source qui utilise et étend le langage SQL combiné à de nombreuses fonctionnalités qui stockent et mettent à l'échelle en toute sécurité les charges de travail de données les plus complexes. PostgreSQL s'est forgé une solide réputation pour son architecture éprouvée, sa fiabilité, son intégrité des données, son ensemble de fonctionnalités robustes, son extensibilité et le dévouement de la communauté open source derrière le logiciel pour fournir constamment des solutions performantes et innovantes. PostgreSQL fonctionne sur tous les principaux systèmes d'exploitation, est compatible ACID et possède des modules complémentaires puissants tels que l'extension de base de données géospatiale PostGIS.
+
+Avantages de PostgreSQL :
+⦁	Prend en charge le mécanisme de verrouillage;
+⦁	A une haute disponibilité.
+⦁	Logiciel gratuit et open source .
+⦁	A la capacité de tolérance aux pannes .
+⦁	Prend en charge l'image, la vidéo, le stockage audio et prend également en charge les données graphiques .
+⦁	Nécessite peu d'entretien .
+⦁	Prend en charge le contrôle d'accès concurrentiel multi-version (MVCC) .
+⦁	Récupération élevée .
+⦁	A des types de données définis par l'utilisateur .
+⦁	Héritage de table.
+⦁	Fonctionne sur tous les systèmes d'exploitation.
+
+3. SQL Server :
+SQL Server est un système de gestion de base de données relationnelle, ou SGBDR, développé et commercialisé par Microsoft. Semblable à d'autres logiciels SGBDR, SQL Server est construit sur SQL, un langage de programmation standard pour interagir avec les bases de données relationnelles. Le serveur SQL est lié à Transact-SQL, ou T-SQL, l’implémentation de SQL de Microsoft qui ajoute un ensemble de constructions de programmation propriétaires.
+Il n’est pas nécessaire que MySQL soit meilleur que PostgreSQL ou vice-versa. Cela dépend des exigences du programmeur pour concevoir son application Web.
+
+Avantages de SQL Server :
+⦁	Installation simplifiée;
+⦁	Excellentes fonctionnalités de sécurité;
+⦁	Performance améliorée;
+⦁	Faible coût de possession.
+
+4. La Comparaison :
+
+Popularité
+ 
+
+MySQL a toujours été la version la plus populaire de SQL .
+Le deuxième en ligne est Microsoft SQL Server (y compris T-SQL, le nom du dialecte SQL de Microsoft), qui reste une balise toujours plus populaire que PostgreSQL .
+Syntaxe 
+Les trois SGBDR utilisent une syntaxe très similaire, avec quelques différences notables mises en évidence ci-dessous. Microsoft SQL Server a le plus grand contraste dans la syntaxe SQL, ainsi qu'une grande variété de fonctions non disponibles sur d'autres plates-formes. Le tableau ci-dessous met en évidence quelques exemples de différences fondamentales entre les plates-formes SQL.
+ 
+
+Nous évaluons ici la facilité avec laquelle les données peuvent être modifiées et la base de données défragmentée. La principale priorité est la flexibilité, la sécurité et la facilité d’utilisation des systèmes.
+
+Mises à jour des lignes
+Ce critère fait référence aux algorithmes qu'une base de données utilise pour mettre à jour son contenu, sa vitesse et son efficacité.
+Dans le cas MySQL, une solution met à jour automatiquement les données vers le stockage de restauration. En cas de problème, les développeurs peuvent toujours revenir à la version précédente.
+PostgreSQL: les développeurs insèrent une nouvelle colonne et ligne afin de mettre à jour la base de données. Toutes les lignes mises à jour ont des ID uniques. Cela multiplie le nombre de colonnes et de lignes et augmente la taille de la base de données, mais à son tour, les développeurs bénéficient d'une meilleure lisibilité.
+SQL Server: la base de données dispose de trois moteurs responsables des mises à jour des lignes. Le magasin ROW gère les informations sur toutes les mises à jour de ligne précédentes, les ID et le contenu modifié. Le moteur en mémoire permet d'analyser la qualité d'une base de données mise à jour avec un garbage collector. La base de données de stockage de colonnes permet de stocker les mises à jour dans des colonnes, comme dans les bases de données basées sur des colonnes.
+
+=> Parmi ces trois, SQL Server offre peut-être la plus grande flexibilité et efficacité, car il permet de surveiller les lignes et colonnes mises à jour, de collecter les erreurs et d'automatiser le processus. La différence entre SQL Server et MySQL et Postgresql réside principalement dans la personnalisation des positions - SQL Server offre beaucoup plus que d'autres.
+
+Prise en charge JSON
+L'utilisation de fichiers JSON permet aux développeurs de stocker des données non numériques et d'obtenir des performances plus rapides. Les documents JSON n'ont pas besoin d'être analysés, ce qui contribue à une vitesse de traitement beaucoup plus élevée. Ils sont facilement lisibles et accessibles, c'est pourquoi la prise en charge de JSON simplifie la maintenance. Les fichiers JSON sont principalement utilisés dans les bases de données non relationnelles, mais récemment, les solutions SQL ont également pris en charge ce format.
+MySQL prend en charge les fichiers JSON mais ne permet pas de les indexer. Dans l'ensemble, les fonctionnalités des fichiers JSON dans MySQL sont très limitées et les développeurs préfèrent généralement utiliser des chaînes classiques. À l'instar des bases de données non relationnelles, MySQL permet également de travailler avec des données géospatiales, bien que leur gestion ne soit pas aussi intuitive.
+Postgresql prend en charge les fichiers JSON, ainsi que leur indexation et leurs mises à jour partielles. La base de données prend en charge encore plus de données supplémentaires que MySQL. Les utilisateurs peuvent télécharger des types définis par l'utilisateur, des données géospatiales, créer des tableaux multidimensionnels et bien plus encore.
+SQL Server fournit également une prise en charge complète des documents JSON, de leurs mises à jour, fonctionnalités et maintenance. Il dispose de nombreuses fonctionnalités supplémentaires pour les données GPS, les types définis par l'utilisateur, les informations hiérarchiques, etc.
+
+=> Dans l'ensemble, les trois solutions sont assez universelles et offrent de nombreuses fonctionnalités pour les types de données non standard. MySQL, cependant, impose de nombreuses limitations aux fichiers JSON, mais à part cela, il est hautement compatible avec les données avancées.
+
+Partitionnement
+Le remplacement est plus facile dans les bases de données NoSQL car elles prennent en charge la mise à l'échelle horizontale plutôt que verticale - augmentant le nombre d'emplacements plutôt que la taille d'un seul. Néanmoins, il est possible de répartir les données entre différents compartiments, même dans les solutions SQL, même si cela est légèrement moins efficace.
+MySQL permet de partitionner les bases de données avec des fonctions de hachage afin de répartir les données entre plusieurs nœuds. Les développeurs peuvent générer une clé de partition spécifique qui définira l'emplacement des données. Le hachage permet d'éviter les goulots d'étranglement et de simplifier la maintenance.
+
+Postgresql permet de créer des partitions LIST et RANGE où l'index d'une partition est créé manuellement. Les développeurs doivent identifier les enfants et la colonne parent avant de leur attribuer une partition.
+
+SQL Server fournit également l'accès au partitionnement RANGE, où la partition est affectée à toutes les valeurs qui tombent dans une plage particulière. Si les données se trouvent dans le seuil, elles seront déplacées vers la partition.
+
+Écosystème
+L'écosystème de base de données est important car il définit la fréquence des mises à jour, la disponibilité des ressources d'apprentissage, la demande sur le marché et l'héritage à long terme de l'outil.
+Écosystème MySQL :  MySQL fait partie de l'écosystème Oracle. C’est la plus grande base de données SQL du marché avec une grande communauté open source. Les développeurs peuvent soit acheter des modules complémentaires commerciaux, développés par l'équipe Oracle, soit utiliser des installations de logiciels gratuits. Vous trouverez facilement des outils de gestion, de surveillance, d'optimisation et d'apprentissage de bases de données. La base de données elle-même est facile à installer - tout ce que vous avez à faire est de télécharger le programme d'installation.
+MySQL est une solution de base de données fiable depuis 25 ans, et les statistiques ne mettent en évidence aucun point de vue sur son déclin. Il semble que MySQL continuera à occuper une position de leader non seulement parmi les outils SQL, mais également parmi toutes les bases de données en général.
+
+Écosystème Postgresql : La communauté Postgresql propose de nombreux outils pour la mise à l'échelle et l'optimisation des logiciels. Vous pouvez trouver des modules complémentaires de votre secteur - consultez la liste complète sur la page officielle. Les intégrations permettent aux développeurs d'effectuer des regroupements, d'intégrer l'IA, de collaborer, de suivre les problèmes, d'améliorer le mappage d'objets et de couvrir de nombreuses autres fonctionnalités essentielles.
+Contrairement à MySQL, qui peut fonctionner tout de suite, Postgresql nécessite des installations supplémentaires.
+
+Écosystème SQL Server :  SQL Server est hautement compatible avec Windows et tous les systèmes d'exploitation et outils Microsoft. Si vous travaillez avec Windows, le serveur SQL est certainement la meilleure option sur le marché. Les utilisateurs de la base de données ont accès à de nombreux instruments supplémentaires qui couvrent la surveillance du serveur (Navicat Monitor), l'analyse des données, l'analyse (SQL Parser) et le logiciel de gestion de la sécurité (DBHawk).
+L'écosystème SQL Server est orienté vers les grandes infrastructures. C'est plus cher que les concurrents open-source, mais en fin de compte, les utilisateurs ont accès à un écosystème officiel fréquemment mis à jour et à un support client actif.
+
+Entreprises
+
+Entreprises utilisant MySQL
+⦁	Google
+⦁	Udemy
+⦁	Netflix
+⦁	Airbnb
+⦁	Amazon
+⦁	Pinterest
+MySQL est largement utilisé par les grandes entreprises et les organisations gouvernementales. Au cours des 25 dernières années, la solution s'est bâtie une réputation de solution de gestion de base de données fiable et, comme le montre le temps, elle est en effet capable de prendre en charge des projets de longue durée.
+
+Entreprises qui utilisent PostgreSQL
+⦁	Apple
+⦁	Skype
+⦁	Cisco
+⦁	Etsy
+Postgre est connu pour ses fonctionnalités intuitives et ses paramètres de sécurité polyvalents. C'est pourquoi ses principaux cas d'utilisation sont les plates-formes gouvernementales, les applications de messagerie, les chats vidéo et les plates-formes de commerce électronique.
+
+Entreprises utilisant SQL Server
+⦁	JPMorganChase
+⦁	Bank of America
+⦁	UPS
+⦁	Houston Methodist
+SQL Server est un choix incontournable pour les grandes entreprises qui ont une vaste logique métier et gèrent plusieurs applications simultanément. Les équipes qui privilégient l'efficacité et la fiabilité à l'évolutivité et aux coûts choisissent généralement cette base de données. C’est une option courante pour les industries «traditionnelles» - finances, sécurité, fabrication et autres.
+
+Conclusion:
+Il n’est pas nécessaire que MySQL soit meilleur que PostgreSQL et SQL Servet ou vice-versa. Cela dépend des exigences du programmeur pour concevoir son application Web.
+
+
